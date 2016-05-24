@@ -21,6 +21,14 @@ p {
     height: 130px;
 }
 
+#base {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    flex-direction: column;
+    margin-top: -74px;
+}
+
 #menu_Home {
     background-color: rgb(244, 177, 131);
 }
@@ -41,9 +49,21 @@ p {
     background-color: rgb(246, 101, 168);
 }
 
+#sliderboxes {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
 .sliderbox {
     position: absolute;
     display: none;
+}
+
+.sliderbox img {
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 .active-sliderbox {
@@ -72,6 +92,7 @@ p {
 
 .new_item_info {
     margin-top: -5px;
+    width: 210px;
     height: 110px;
     border-radius: 5px;
     padding: 20px;
@@ -89,7 +110,11 @@ p {
     width: 100%;
 }
 
-@media screen and (min-width: 1280px) {
+#hamburger:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
     #logo {
         margin: 0px 150px 0px auto;
     }
@@ -100,19 +125,15 @@ p {
         margin: 50px auto 0px 200px;
     }
 
-    #menu {
+    #hamburger img {
+        display: none;
+    }
+
+    .menu {
         display: flex;
         width: 100%;
         justify-content: space-around;
         background-color: white;
-    }
-
-    #base {
-        display: flex;
-        width: 1000px;
-        height: 1400px;
-        flex-direction: column;
-        margin-top: -74px;
     }
 
     .menu_list {
@@ -121,12 +142,6 @@ p {
         text-align: center;
         width: 200px;
         padding: 23px;
-    }
-
-    #sliderboxes {
-        width: 1000px;
-        height: 750px;
-        text-align: center;
     }
 
     .arrow-prev {
@@ -175,45 +190,34 @@ p {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px){
+@media screen and (min-width: 768px) and (max-width: 1000px) {
     #logo {
-        margin: 0px 10% 0px auto;
+        margin: 0px auto 0px 10px;
     }
 
     #logo_words {
         width: 305px;
         height: 82px;
-        margin: 50px auto 0px 0px;
+        margin: 50px 10px 0px auto;
     }
 
-    #menu {
+    #hamburger img {
+        display: none;
+    }
+
+    .menu {
         display: flex;
         width: 100%;
         justify-content: space-around;
         background-color: white;
     }
 
-    #base {
-        display: flex;
-        width: 100%;
-        max-width: 1000px;
-        height: auto;
-        flex-direction: column;
-        margin-top: -74px;
-    }
-
     .menu_list {
         color: white;
         font-size: 24px;
         text-align: center;
-        width: 200px;
+        width: 20%;
         padding: 23px;
-    }
-
-    #sliderboxes {
-        width: 100%;
-        height: 750px;
-        text-align: center;
     }
 
     .arrow-prev {
@@ -245,7 +249,7 @@ p {
     #footer_copyrights {
         align-items: center;
         padding: 10px;
-        margin: 0px 250px 0px auto;
+        margin: 0px auto 0px 40px;
         font-size: 24px;
         line-height: 36px;
     }
@@ -256,51 +260,53 @@ p {
         align-items: center;
         width: 200px;
         padding: 10px;
-        margin: 0px auto 0px 150px;
+        margin: 0px 40px 0px auto;
         font-size: 24px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
 
+    #header {
+        padding-bottom: 70px;
+        height: 60px;
+    }
+
+    #hamburger img {
+        width: auto;
+        height: 60px;
+    }
+
     #logo {
-        margin: 0px 150px 0px auto;
+        width: auto;
+        height: 60px;
+        margin: 0px auto 0px 10px;
     }
 
     #logo_words {
-        width: 305px;
-        height: 82px;
-        margin: 50px auto 0px 200px;
+        width: auto;
+        height: 60px;
+        margin: 0px 10px 0px auto;
     }
 
-    #menu {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        background-color: white;
-    }
-
-    #base {
-        display: flex;
-        width: 1000px;
-        height: 1400px;
+    .menu {
+        display: none;
         flex-direction: column;
-        margin-top: -74px;
+        width: 100%;
+        background-color: white;
+        height: 268px;
+    }
+
+    .menu-click {
+        display: flex;
     }
 
     .menu_list {
         color: white;
         font-size: 24px;
         text-align: center;
-        width: 200px;
-        padding: 23px;
-    }
-
-    #sliderboxes {
-        width: 1000px;
-        height: 750px;
-        text-align: center;
+        width: 100%;
+        padding: 10px;
     }
 
     .arrow-prev {
@@ -329,10 +335,22 @@ p {
         margin-right: 5px;
     }
 
+    #new_items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #new_items > div {
+       margin-top: 40px;
+    }
+
     #footer_copyrights {
         align-items: center;
         padding: 10px;
-        margin: 0px 250px 0px auto;
+        margin: 0px auto 0px 10px;
         font-size: 24px;
         line-height: 36px;
     }
@@ -343,9 +361,23 @@ p {
         align-items: center;
         width: 200px;
         padding: 10px;
-        margin: 0px auto 0px 150px;
+        margin: 0px 10px 0px auto;
         font-size: 24px;
     }
 
 }
+
+@media screen and (max-width: 460px) {
+    #logo_words {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #footer {
+        flex-direction: column;
+    }
+}
+
+
 
