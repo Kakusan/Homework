@@ -294,7 +294,7 @@ p {
         flex-direction: column;
         width: 100%;
         background-color: white;
-        height: 268px;
+        height: 240px;
     }
 
     .menu-click {
@@ -378,6 +378,3 @@ p {
         flex-direction: column;
     }
 }
-
-
-
