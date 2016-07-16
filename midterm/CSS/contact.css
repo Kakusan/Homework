@@ -1,0 +1,154 @@
+/* Global style*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f0ede5;
+}
+
+p {
+  font-family: 微軟正黑體;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header style*/
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+	width: 100%;
+	height: 80px;
+}
+
+#logo {
+  margin-left: 2%;
+}
+
+#logo div {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav style*/
+/* Nav style*/
+.site-nav{
+  width: 100%;
+  background-color: #e87536;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+.site-nav ul li{
+  width: 100%;
+}
+
+.site-nav li:hover{
+  background-color: #7d6c59;
+}
+
+.site-nav a {
+	display: block;
+	color: white;
+	padding: 20px 50px;
+  border-left: 1px solid #585858;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 微軟正黑體;
+}
+
+#first-item{
+  border-left: none;
+}
+
+/*main area*/
+.container{
+  width: 960px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container h1{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-family: Arial;
+  font-weight: lighter;
+}
+
+.container h2{
+  font-family: 微軟正黑體;
+}
+
+.members{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.members p{
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+
+.members span{
+  color: rgb(73, 73, 73);
+}
+
+.profile{
+  width: 960px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #6e6a61;
+	width: 100%;
+}
+
+#footer_copyrights {
+  margin-left: 2%;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+}
+
+#footer_copyrights p{
+  margin: 0;
+  padding: 0;
+}
+
+#footer_shares {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  font-size: 24px;
+  color: white;
+}
